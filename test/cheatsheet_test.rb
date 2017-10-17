@@ -7,7 +7,7 @@ class CheatsheetTest < Minitest::Test
   end
 
   def test_client_success
-    assert_match /Jollibee/, Cheatsheet::Client.fetch("ph-food-delivery")
+    assert_match /Jollibee/, Cheatsheet::Client.fetch("ph-food-delivery"), true
   end
 
   def test_client_failure
